@@ -2,7 +2,7 @@
 
 <p align="center">
 
-  <img src="https://files.catbox.moe/vxmarw.jpg" width="180" alt="Pou"/>
+  <img src="https://files.catbox.moe/vxmarw.jpg" width="180" alt="GrenXharimauNew"/>
 
 </p>
 
@@ -25,7 +25,7 @@ Requires **Node.js 20+** (this package is ESM-only; see [Import](#import)).
 
 From the npm registry (once published):
 ```bash
-npm install @poucode/baileys
+npm install @GrenXharimauNew/baileys
 ```
 
 Directly from GitHub:
