@@ -2,7 +2,7 @@
 
 <p align="center">
 
-  <img src="https://files.catbox.moe/i497x5.jpg" width="180" alt="Pou"/>
+  <img src="https://files.catbox.moe/vxmarw.jpg" width="180" alt="Pou"/>
 
 </p>
 
@@ -12,7 +12,7 @@
 [![GitHub](https://img.shields.io/badge/source-GitHub-black.svg)](https://github.com/pou-code/Baileys)
 [![Node](https://img.shields.io/badge/node-%3E%3D20-brightgreen.svg)](package.json)
 
-A WebSockets library for interacting with WhatsApp Web, maintained under the **PouCode** brand.
+A WebSockets library for interacting with WhatsApp Web, maintained under the **GrenXharimauNew** brand.
 This project is a fork built on top of [Baileys](https://github.com/WhiskeySockets/Baileys) by WhiskeySockets.
 
 </div>
@@ -30,13 +30,13 @@ npm install @poucode/baileys
 
 Directly from GitHub:
 ```bash
-npm install github:pou-code/Baileys
+npm install github:GrenXharimauNew/Baileys
 ```
 
 Or add it to your `package.json` manually:
 ```json
 "dependencies": {
-  "@poucode/baileys": "github:pou-code/Baileys"
+  "@GrenXharimauNew/baileys": "github:GrenXharimauNew/Baileys"
 }
 ```
 
@@ -45,7 +45,7 @@ Already have a bot built on the original `@whiskeysockets/baileys` and don't wan
 name points to this fork:
 ```json
 "dependencies": {
-  "@whiskeysockets/baileys": "github:pou-code/Baileys"
+  "@whiskeysockets/baileys": "github:GrenXharimauNew/Baileys"
 }
 ```
 With this alias, keep using `require('@whiskeysockets/baileys')` in your code as-is — npm will
@@ -60,7 +60,7 @@ npm install github:pou-code/Baileys#main
 
 ESM (works on every supported Node.js version):
 ```javascript
-import makeWASocket, { Browsers, DisconnectReason } from '@poucode/baileys';
+import makeWASocket, { Browsers, DisconnectReason } from '@GrenXharimauNew/baileys';
 ```
 
 CommonJS: the package is ESM-only, so `require()` only works on Node.js 22.12+ or 20.19+
@@ -69,7 +69,7 @@ CommonJS: the package is ESM-only, so `require()` only works on Node.js 22.12+ o
 const {
   default: makeWASocket,
   // other exports
-} = require('@poucode/baileys');
+} = require('@GrenXharimauNew/baileys');
 ```
 
 ---
@@ -81,10 +81,10 @@ const {
 const {
   default: makeWASocket,
   Browsers
-} = require('@poucode/baileys');
+} = require('@GrenXharimauNew/baileys');
 
 const client = makeWASocket({
-  browser: Browsers.poucode('Chrome')
+  browser: Browsers.GrenXharimauNew('Chrome')
 });
 
 // `printQRInTerminal` is deprecated: the QR string now arrives via connection.update.
@@ -101,14 +101,14 @@ const {
   default: makeWASocket,
   fetchLatestWaWebVersion,
   Browsers
-} = require('@poucode/baileys');
+} = require('@GrenXharimauNew/baileys');
 
 async function start() {
   // fetchLatestWaWebVersion() resolves to { version, isLatest, error? }
   const { version } = await fetchLatestWaWebVersion();
 
   const client = makeWASocket({
-    browser: Browsers.poucode('Chrome'),
+    browser: Browsers.GrenXharimauNew('Chrome'),
     printQRInTerminal: false,
     version,
     aiLabel: false // set true to show an AI label on messages sent by the bot
@@ -129,7 +129,7 @@ start();
 const {
   default: makeWASocket,
   makeInMemoryStore
-} = require('@poucode/baileys');
+} = require('@GrenXharimauNew/baileys');
 const pino = require('pino');
 
 const store = makeInMemoryStore({
@@ -163,7 +163,7 @@ logged into the same account). It does not affect delivery to the recipient.
 ```javascript
 // Sent to the recipient, but NOT synced to your other devices
 await client.relayMessage(m.chat, {
-  conversation: "Hello from PouCode"
+  conversation: "Hello from GrenXharimauNew"
 }, {
   noSelfSync: true
 });
@@ -420,7 +420,7 @@ await client.statusMention(m.chat, {
 
 # Credits
 
-PouCode is a fork of [Baileys](https://github.com/WhiskeySockets/Baileys), originally created by
+GrenXharimauNew is a fork of [Baileys](https://github.com/WhiskeySockets/Baileys), originally created by
 [Adhiraj Singh](https://github.com/adiwajshing) and maintained by the WhiskeySockets community.
 All credit for the underlying protocol implementation goes to the original authors and contributors.
 See [LICENSE](LICENSE) for the full license text and copyright notices.
